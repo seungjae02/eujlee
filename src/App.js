@@ -1,56 +1,59 @@
-// src/App.js
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button, Box, Container } from '@mui/material';
-import test from "./assets/images/logo-transparent-png.png";
+import { ThemeProvider } from '@mui/material';
+import NavBar from './components/NavBar';
+import Landing from './sections/Landing';
+import About from './sections/About';
+import Services from './sections/Services';
+import Contact from './sections/Contact';
+import './App.css';
+import { createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#82A192',
+      contrastText: '#ffffff',
+    },
+    secondary: {
+      main: '#5e7b63',
+      contrastText: '#ffffff',
+    },
+  },
+  typography: {
+    fontFamily: 'Poppins, sans-serif',
+    fontSize: 18,
+    h1: {
+      fontSize: '3rem',
+    },
+    h2: {
+      fontSize: '2.5rem',
+    },
+    h3: {
+      fontSize: '1.7rem',
+    },
+    body1: {
+      fontSize: '1.35rem',
+    },
+  },
+});
 
 function App() {
   return (
-    <div>
-      {/* Header Section */}
-      <AppBar position="static" color="transparent" elevation={0}>
-        <Toolbar>
-          <Box component="img" 
-            src={test} 
-            sx={{ height: 120, marginRight: 2 }} 
-          />
-          <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            WE NATURE BALANCE
-          </Typography>
-          <Button color="inherit">HOME</Button>
-          <Button color="inherit">ABOUT</Button>
-          <Button color="inherit">SERVICES</Button>
-          <Button color="inherit">RESOURCES</Button>
-          <Button color="inherit">CONTACT</Button>
-          <Button variant="outlined" color="primary" sx={{ ml: 2 }}>
-            BOOK NOW
-          </Button>
-        </Toolbar>
-      </AppBar>
-
-      {/* Hero Section */}
-      <Box
-        sx={{
-          backgroundImage: 'url(https://source.unsplash.com/1600x900/?spa)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '80vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          textAlign: 'center',
-          color: 'white',
-        }}
-      >
-        <Container>
-          <Typography variant="h3" sx={{ fontWeight: 'bold', mb: 2 }}>
-            Revitalize Your Beauty with Aesthetic Excellence
-          </Typography>
-          <Button variant="contained" color="secondary" size="large">
-            Schedule an Appointment
-          </Button>
-        </Container>
-      </Box>
-    </div>
+    <ThemeProvider theme={theme}>
+      <NavBar />
+      <div id="home">
+        <Landing />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+    </ThemeProvider>
   );
 }
 

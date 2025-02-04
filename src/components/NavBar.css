@@ -1,0 +1,146 @@
+/* NavBar.css */
+
+/* Prevent Horizontal Scrolling on the Whole Page */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Default navbar with a subtle background and gradient bottom */
+  .navbar {
+    background: rgba(130, 161, 146, 0.85); /* Subtle muted green */
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid transparent;
+    position: relative;
+    width: 100%;
+    max-width: 100vw; /* Ensures it never overflows */
+    padding: 10px 20px;
+  }
+  
+  /* Align Navbar items properly */
+  .navbar-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Gradient effect at the bottom of the navbar */
+  .navbar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+  }
+  
+  /* Slightly more solid on scroll */
+  .navbar.scrolled {
+    background: rgba(130, 161, 146, 0.95);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo Styling */
+  .logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .logo:hover {
+    transform: scale(1.08);
+  }
+  
+  /* Navbar Buttons (Right-Aligned) */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+  }
+  
+  .nav-button {
+    color: white !important;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.2s, transform 0.2s;
+  }
+  
+  .nav-button:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transform: scale(1.05);
+  }
+  
+  /* Book Now Button */
+  .book-now {
+    border-color: white !important;
+    color: white !important;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .book-now:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    transform: scale(1.05);
+  }
+  
+  /* Hamburger Menu Button (Now on Right) */
+  .menu-button {
+    display: none;
+    margin-left: auto;
+  }
+  
+  /* Mobile Drawer */
+  .mobile-menu {
+    width: 250px;
+    background: rgba(130, 161, 146, 0.95);
+    height: 100%;
+    padding-top: 20px;
+  }
+  
+  .mobile-menu .MuiListItemText-primary {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .mobile-menu .MuiButton-root {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Prevents Horizontal Scroll Issues */
+  @media (max-width: 900px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .menu-button {
+      display: block !important;
+    }
+  
+    /* Prevents navbar padding from causing horizontal scrolling */
+    .navbar {
+      padding: 10px;
+      max-width: 100vw;
+    }
+  
+    /* Prevents the drawer from exceeding the screen */
+    .mobile-menu {
+      width: 100vw;
+      max-width: 100%;
+    }
+  }
+  
