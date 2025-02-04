@@ -7,7 +7,7 @@ const Contact = () => {
     <Box className="contact-container">
       <Container>
         <Typography variant="h2" color="primary" align="center" gutterBottom>
-          Contact Us
+          <strong>Contact Us</strong> and Book Now!
         </Typography>
 
         <Grid container spacing={4} alignItems="stretch">

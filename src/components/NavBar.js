@@ -69,7 +69,7 @@ function NavBar() {
             <Button className="nav-button" onClick={() => handleScrollToSection("contact")}>
               CONTACT
             </Button>
-            <Button variant="outlined" className="book-now">
+            <Button variant="outlined" className="book-now" onClick={() => handleScrollToSection("contact")}>
               BOOK NOW
             </Button>
           </Box>
