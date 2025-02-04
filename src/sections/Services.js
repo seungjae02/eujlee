@@ -1,39 +1,51 @@
 import React from 'react';
 import { Box, Typography, Container, Paper } from '@mui/material';
 import './Services.css'; // Import CSS
+import InitialAssessment from "../assets/images/InitialAssessment.webp";
+import AssessmentAndTreatment from "../assets/images/AssessmentAndTreatment.webp";
+import FollowUp from "../assets/images/FollowUp.webp";
+import Facial from "../assets/images/Facial.webp";
+import FacialFollowUp from "../assets/images/FacialFollowUp.webp";
 
 const services = [
-  { 
-    title: 'Acupuncture Therapy', 
-    price: '$80/session', 
-    description: 'Address insomnia, anxiety, pain, and more.', 
-    image: 'https://www.shutterstock.com/image-photo/bowl-acupuncture-needles-on-wooden-600nw-2138294175.jpg' 
-  },
-  { 
-    title: 'Facial Rejuvenation', 
-    price: '$120/session', 
-    description: 'Improve aging naturally through targeted treatments.', 
-    image: 'https://www.shutterstock.com/image-photo/bowl-acupuncture-needles-on-wooden-600nw-2138294175.jpg' 
-  },
-  { 
-    title: 'Pain Management', 
-    price: '$90/session', 
-    description: 'Relieve chronic pain and promote physical wellness.', 
-    image: 'https://www.shutterstock.com/image-photo/bowl-acupuncture-needles-on-wooden-600nw-2138294175.jpg' 
-  },
-  { 
-    title: 'Weight Management', 
-    price: '$100/session', 
-    description: 'Support weight control with holistic methods.', 
-    image: 'https://www.shutterstock.com/image-photo/bowl-acupuncture-needles-on-wooden-600nw-2138294175.jpg' 
-  },
-  { 
-    title: 'Skin Care', 
-    price: '$70/session', 
-    description: 'Treat skin issues like acne, eczema, and more.', 
-    image: 'https://www.shutterstock.com/image-photo/bowl-acupuncture-needles-on-wooden-600nw-2138294175.jpg' 
-  },
+    { 
+        title: 'Initial Assessment', 
+        price: '$150/60 min', 
+        description: 'Comprehensive evaluation of your health condition.', 
+        image: InitialAssessment
+    },
+    { 
+        title: 'Initial Assessment and Treatment', 
+        price: '$240/90 min', 
+        description: 'Complete assessment with first acupuncture treatment.', 
+        image: AssessmentAndTreatment
+    },
+    { 
+        title: 'Follow Up', 
+        price: '$150/60 min', 
+        description: 'Regular follow-up treatment for ongoing care.', 
+        image: FollowUp
+    },
+    { 
+        title: 'Follow Up', 
+        price: '$75/60 min', 
+        description: 'Continued acupuncture sessions tailored to your needs.', 
+        image: FollowUp
+    },
+    { 
+        title: 'Facial Rejuvenation Initial', 
+        price: '$270', 
+        description: 'First facial rejuvenation acupuncture session.', 
+        image: Facial
+    },
+    { 
+        title: 'Facial Rejuvenation Follow Up', 
+        price: '$190', 
+        description: 'Follow-up session for facial acupuncture.', 
+        image: FacialFollowUp
+    }
 ];
+  
 
 const Services = () => {
   return (

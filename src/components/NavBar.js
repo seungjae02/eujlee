@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import {
   AppBar,
   Toolbar,
-  Typography,
   Button,
   Box,
   IconButton,
@@ -10,6 +9,7 @@ import {
   List,
   ListItem,
   ListItemText,
+  Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/images/logo-transparent-png.png";
@@ -30,17 +30,18 @@ function NavBar() {
   const handleScrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      window.scrollTo({
-        top: section.offsetTop - 80,
-        behavior: "smooth",
-      });
-      setMobileOpen(false); // Close the mobile menu after clicking a section
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+        setTimeout(() => setMobileOpen(false), 300);
     }
   };
 
   return (
     <>
-      <AppBar position="sticky" className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      <AppBar
+        position="sticky"
+        className={`navbar ${scrolled ? "scrolled" : ""}`}
+        sx={{ top: 0, zIndex: 1000 }}
+      >
         <Toolbar className="navbar-toolbar">
           {/* Logo */}
           <Box
@@ -48,7 +49,11 @@ function NavBar() {
             src={logo}
             className="logo"
             onClick={() => handleScrollToSection("home")}
+            sx={{ cursor: "pointer", height: "80px" }}
           />
+          <Typography className="nav-title" variant="h6" sx={{ flexGrow: 1 }}>
+            WE NATURE BALANCE
+          </Typography>
 
           {/* Desktop Navigation (Right-Aligned) */}
           <Box className="nav-links">
@@ -83,16 +88,16 @@ function NavBar() {
         </Toolbar>
       </AppBar>
 
-      {/* Mobile Drawer (Smaller Width) */}
+      {/* Mobile Drawer */}
       <Drawer
         anchor="right"
         open={mobileOpen}
         onClose={() => setMobileOpen(false)}
         sx={{
           "& .MuiDrawer-paper": {
-            width: "60vw", // Only covers 60% of the screen
-            maxWidth: "300px", // Max width for better UI
-            background: "rgba(130, 161, 146, 0.95)", // Same as navbar
+            width: "60vw",
+            maxWidth: "300px",
+            background: "rgba(130, 161, 146, 0.95)",
           },
         }}
       >

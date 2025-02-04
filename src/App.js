@@ -32,7 +32,7 @@ const theme = createTheme({
       fontSize: '1.7rem',
     },
     body1: {
-      fontSize: '1.35rem',
+      fontSize: '1.1rem',
     },
   },
 });
@@ -41,18 +41,10 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavBar />
-      <div id="home">
-        <Landing />
-      </div>
-      <div id="about">
-        <About />
-      </div>
-      <div id="services">
-        <Services />
-      </div>
-      <div id="contact">
-        <Contact />
-      </div>
+      <section id="home"><Landing /></section>
+      <section id="about"><About /></section>
+      <section id="services"><Services /></section>
+      <section id="contact"><Contact /></section>
     </ThemeProvider>
   );
 }

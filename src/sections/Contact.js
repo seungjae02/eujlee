@@ -30,7 +30,7 @@ const Contact = () => {
               <Typography variant="h4" color="secondary" gutterBottom>
                 Get in Touch
               </Typography>
-              <Typography variant="body1" color="textPrimary" paragraph>
+              <Typography variant="body" color="textPrimary" paragraph>
                 Feel free to reach out for any inquiries or to book an appointment. We’d love to hear from you!
               </Typography>
 

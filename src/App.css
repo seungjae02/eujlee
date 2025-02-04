@@ -43,10 +43,13 @@
   margin-bottom: 16px;
 }
 
-body {
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* Ensures smooth scrolling */
   font-family: 'Poppins', sans-serif;
 }
-
 
 
 
