@@ -1,8 +1,8 @@
 // src/sections/About.js
 import React from 'react';
 import { Box, Typography, Container, Grid } from '@mui/material';
-import office2 from "../assets/images/office2.png";
-import office3 from "../assets/images/office3.png";
+import office1 from "../assets/images/office1.jpg";
+import office2 from "../assets/images/office2.jpg";
 import portrait from "../assets/images/portrait.jpg";
 
 const About = () => {
@@ -16,7 +16,7 @@ const About = () => {
 
             <Box
                 component="img"
-                src={office3}
+                src={office1}
                 alt="About Us"
                 sx={{
                     float: 'right',
