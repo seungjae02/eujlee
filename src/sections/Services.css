@@ -30,19 +30,14 @@
   }
   
   .service-image {
-    width: 160px;
-    height: 160px;
+    max-width: 100px;
+    max-height: 100px;
     border-radius: 12px;
     object-fit: cover;
   }
   
   .service-content {
     flex: 3 1 300px;
-  }
-  
-  .service-title {
-    color: var(--secondary-color);
-    margin-bottom: 8px;
   }
   
   .service-description {
@@ -56,3 +51,15 @@
     font-weight: bold;
   }
   
+  .sub-services-title {
+    color: #82A192;
+    margin-bottom: 8px;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .includes-title {
+    color: #82A192;
+    font-weight: bold;
+  }
