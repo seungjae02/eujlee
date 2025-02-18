@@ -10,68 +10,75 @@ import FacialFollowUp from "../assets/images/FacialFollowUp.webp";
 
 const general_services = [
     { 
-        title: 'Initial Assessment', 
-        price: '$150/60 min', 
-        description: 'Comprehensive evaluation of your health condition.', 
+        title: 'Initial Assessment (60 mins)', 
+        price: '$150', 
+        description: 'A comprehensive evaluation of your body’s condition, lifestyle, and health goals. Includes physical examination and health coaching for self-care to improve the treatment’s effects and change your lifestyle.', 
     },
-    { 
-        title: 'Initial Assessment and Treatment', 
-        price: '$240/90 min', 
-        description: 'Complete assessment with first acupuncture treatment.', 
-    },
-    { 
-        title: 'Follow Up', 
-        price: '$150/60 min', 
-        description: 'Regular follow-up treatment for ongoing care.', 
+    {  
+        title: 'Initial Assessment and Treatment (90 mins)', 
+        price: '$250', 
+        description: 'Includes everything in "Initial Assessment", followed by an acupuncture treatment and/or other modality treatment which is best suitable for your health condition.', 
     },
     { 
         title: 'Follow Up', 
-        price: '$75/60 min', 
-        description: 'Continued acupuncture sessions tailored to your needs.', 
-    }
+        price: '$150/60 min', 
+        description: 'Regular follow-up assessment and treatment for ongoing care.', 
+    },
 ];
 
 const facial_services = [
   { 
-    title: 'Cosmetic Acupuncture Initial (2 hrs)', 
+    title: 'Cosmetic Acupuncture Initial (120 mins)', 
     price: '$340', 
-    description: 'First facial rejuvenation acupuncture session.', 
+    description: 'First facial rejuvenation acupuncture session. Included personalized health assessment and the first acupuncture treatment', 
     isPkg: false,
   },
   { 
-    title: 'Cosmetic Acupuncture Follow Up (1.5 hrs)', 
+    title: 'Cosmetic Acupuncture Follow Up (90 mins)', 
     price: '$190', 
-    description: 'Follow-up session for facial acupuncture.', 
+    description: 'Regular follow-up assessment and facial acupuncture treatment for ongoing care', 
     isPkg: false,
   },
   { 
-    title: 'Microneedling', 
+    title: 'Microneedling (90 mins)', 
     price: '$275', 
-    description: 'Microneedling', 
+    description: 'Facial rejuvenation micro-needling treatment. Recommended as an adjunction to cosmetic acupuncture treatment.', 
     isPkg: false,
   },
   { 
-    title: 'Cosmetic Acupuncture Follow Up Package (6x)', 
+    title: 'Cosmetic Acupuncture Follow Up Package (6x 90 min treatments)', 
     price: '$1,000', 
-    description: 'Follow-up session package for facial acupuncture.', 
+    description: '6 times follow-up session package for facial acupuncture after the initial facial rejuvenation acupuncture session (Initial facial rejuvenation session is not included in this package).', 
     isPkg: true,
   },
   { 
-    title: 'Cosmetic Acupuncture Follow Up Package (12x)', 
-    price: '$2,000', 
-    description: 'Follow-up session package for facial acupuncture.', 
+    title: 'Cosmetic Acupuncture Follow Up Package (12x 90 min treatments)', 
+    price: '$1,900', 
+    description: '12 times follow-up session package for facial acupuncture after the initial facial rejuvenation acupuncture session (Initial facial rejuvenation session is not included in this package).', 
     isPkg: true,
   },
   { 
-    title: 'Microneedling Package (4x)', 
-    price: '$1,000 ($250/treatment)', 
-    description: 'Microneedling', 
+    title: 'Microneedling Package (4x 90 min treatments)', 
+    price: '$1,000', 
+    description: '4 times regular (once per month) micro-needling package.', 
     isPkg: true,
   },
   { 
-    title: 'Microneedling Package (10x)', 
-    price: '$2,000 ($200/treatment)', 
-    description: 'Microneedling', 
+    title: 'Trial Package', 
+    price: '$2,400', 
+    services_included: ['8 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $340 value).', '2 Microneedling Treatments ($270 value per session).', '120 min for the initial session plus 90 min for follow-up sessions.'],
+    isPkg: true,
+  },
+  { 
+    title: '4-month Makeover Package', 
+    price: '$2,800', 
+    services_included: ['12 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $340 value).', '4 Microneedling Treatments.', '120 min for the initial session plus 90 min for follow-up sessions.'],
+    isPkg: true,
+  },
+  { 
+    title: 'Ultimate Package', 
+    price: '$4,000', 
+    services_included: ['16 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $340 value).', '6 Microneedling Treatments.', '120 min for the initial session plus 90 min for follow-up sessions.'],
     isPkg: true,
   }
 ];
@@ -79,21 +86,21 @@ const facial_services = [
 const special_services = [
   { 
       title: 'Acne Treatment Package', 
-      price: '$1,800', 
+      price: '$2,200', 
       description: 'Acne Treatment Package', 
-      services_included: ['12 Cosmetic Acupuncture Treatments', '6 Microneedling Acne Treatments'],
+      services_included: ['12 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $340 value).', '4 Microneedling Treatments', '120 min for the initial session plus 90 min for follow-up sessions.'],
   },
   { 
       title: 'Hair Regrowth Package', 
-      price: '$3,600', 
+      price: '$4,600', 
       description: 'Hair Regrowth Package', 
-      services_included: ['24 Cosmetic Acupuncture Treatments', '8 Scalp Microneedling Treatments'],
+      services_included: ['24 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $340 value).', '8 Scalp Microneedling Treatments.', '6 Free scalp laser treatment.', '120 min for the initial session plus 90 min for follow-up sessions.'],
   },
   { 
       title: 'Face Lift & Wrinkle Package', 
-      price: '$2,200', 
+      price: '$2,800', 
       description: 'Face Lift & Wrinkle Package', 
-      services_included: ['12 Cosmetic Acupuncture Treatments', '6 Microneedling Lift Treatments'],
+      services_included: ['12 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $340 value).', '4 Microneedling Treatments.', '120 min for the initial session plus 90 min for follow-up sessions.'],
   }
 ];
 
@@ -172,9 +179,19 @@ const Services = () => {
                   <Typography variant="h3" className="service-title">
                     {service.title}
                   </Typography>
-                  <Typography variant="body1" className="service-description">
-                    {service.description}
-                  </Typography>
+                  {
+                    service.description ? 
+                      (<Typography variant="body1" className="service-description">
+                        {service.description}
+                      </Typography>) : ""
+                  }
+                  {console.log(service.services_included)}
+                  {
+                    service.services_included ?
+                    (service.services_included.map((included, index) => (
+                      <li>{included}</li>
+                    ))) : ""
+                  }
                 </Box>
                 <Box className="service-price">
                   <Typography variant="body1">{service.price}</Typography>
