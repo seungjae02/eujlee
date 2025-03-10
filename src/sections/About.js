@@ -114,7 +114,7 @@ const About = () => {
 
 
             <Typography variant="aboutText" color="text.primary" paragraph>
-                At We Nature Balance, first, we get to know your body’s condition, your 
+                Interested? At We Nature Balance, first, we get to know your body’s condition, your 
                 lifestyle, and your health goals. Then, we will provide you with customized 
                 acupuncture treatment. In addition, we will work together to create a 
                 healthcare plan that allows you to do self-care to improve and maintain the 
