@@ -20,7 +20,7 @@ const general_services = [
         description: 'A comprehensive evaluation of your body’s condition, lifestyle, and health goals. Includes disease diagnosis, and health coaching for self-care (changing your lifestyle, recommendations for further assessment, and treatment procedures). Online meeting at your convenient place. Ideal for a person who has a tight schedule', 
     },
     {  
-        title: 'Initial Assessment and Treatment (90 mins)', 
+        title: 'Initial Assessment and Treatment (120 mins)', 
         price: '$250', 
         description: 'Includes everything in "Initial Assessment", followed by an acupuncture treatment and/or other modality treatment which is best suitable for your health condition.', 
     },
