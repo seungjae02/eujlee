@@ -102,7 +102,7 @@ const About = () => {
             />
 
             <Typography variant="aboutText" color="text.primary" paragraph>
-                I am Eun Jung Lee. I’m a registered acupuncturist in <strong>Canada and the USA</strong> with 
+                I am Eun Jung Lee. I’m a registered acupuncturist in <strong>Canada</strong> and the <strong>USA</strong> with 
                 a focus on pain management. Formerly, I worked as a medical doctor 
                 for 17 years in Seoul, South Korea. I also studied naturopathic medicine, 
                 in addition to traditional Chinese medicine, in Canada. I can provide 

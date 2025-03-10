@@ -12,7 +12,12 @@ const general_services = [
     { 
         title: 'Initial Assessment (60 mins)', 
         price: '$150', 
-        description: 'A comprehensive evaluation of your body’s condition, lifestyle, and health goals. Includes physical examination and health coaching for self-care to improve the treatment’s effects and change your lifestyle.', 
+        description: 'A comprehensive evaluation of your body’s condition, lifestyle, and health goals. Includes physical examination, disease diagnosis, and health coaching for self-care (changing your lifestyle, recommendations for further assessment, and treatment procedures).', 
+    },
+    { 
+        title: 'Online Health Consultation & Coaching (30 mins)', 
+        price: '$75 (+$30/addtional 15 mins)', 
+        description: 'A comprehensive evaluation of your body’s condition, lifestyle, and health goals. Includes disease diagnosis, and health coaching for self-care (changing your lifestyle, recommendations for further assessment, and treatment procedures). Online meeting at your convenient place. Ideal for a person who has a tight schedule', 
     },
     {  
         title: 'Initial Assessment and Treatment (90 mins)', 
@@ -29,56 +34,71 @@ const general_services = [
 const facial_services = [
   { 
     title: 'Cosmetic Acupuncture Initial (120 mins)', 
-    price: '$340', 
-    description: 'First facial rejuvenation acupuncture session. Included personalized health assessment and the first acupuncture treatment', 
+    price: '$300', 
+    description: 'First facial rejuvenation acupuncture session. Includes personalized health assessment and body acupuncture treatment, which is customized based on your fundamental body condition to enhance the facial rejuvenation treatment effect. Additional facial Gua Sha/ Cupping.', 
     isPkg: false,
   },
   { 
     title: 'Cosmetic Acupuncture Follow Up (90 mins)', 
     price: '$190', 
-    description: 'Regular follow-up assessment and facial acupuncture treatment for ongoing care', 
+    description: 'Regular follow-up assessment and facial acupuncture treatment for ongoing care. Additional facial Gua Sha/ Cupping. Each session includes accompanied body acupuncture treatment based on your fundamental body condition to enhance the facial rejuvenation treatment effect.', 
     isPkg: false,
   },
   { 
     title: 'Microneedling (90 mins)', 
     price: '$275', 
-    description: 'Facial rejuvenation micro-needling treatment. Recommended as an adjunction to cosmetic acupuncture treatment.', 
+    description: 'Facial rejuvenation micro-needling treatment. Accompanied by body acupuncture treatment based on your fundamental body condition to enhance the facial treatment effect. The customized facial paste of natural herbal ingredients is used for microneedling sessions to promote the facial rejuvenation treatment effect. Recommended as an adjunct to cosmetic acupuncture treatment ', 
     isPkg: false,
   },
   { 
     title: 'Cosmetic Acupuncture Follow Up Package (6x 90 min treatments)', 
     price: '$1,000', 
-    description: '6 times follow-up session package for facial acupuncture after the initial facial rejuvenation acupuncture session (Initial facial rejuvenation session is not included in this package).', 
+    description: '6 times follow-up session package for facial acupuncture after the initial facial rejuvenation acupuncture session (Initial facial rejuvenation session is not included in this package). Additional facial Gua Sha/ Cupping. Each session includes accompanied body acupuncture treatment based on your fundamental body condition to enhance the facial rejuvenation treatment effect.', 
     isPkg: true,
   },
   { 
     title: 'Cosmetic Acupuncture Follow Up Package (12x 90 min treatments)', 
     price: '$1,900', 
-    description: '12 times follow-up session package for facial acupuncture after the initial facial rejuvenation acupuncture session (Initial facial rejuvenation session is not included in this package).', 
+    description: '12 times follow-up session package for facial acupuncture after the initial facial rejuvenation acupuncture session (Initial facial rejuvenation session is not included in this package). Additional facial Gua Sha/ Cupping. Each session includes accompanied body acupuncture treatment based on your fundamental body condition to enhance the facial rejuvenation treatment effect.', 
     isPkg: true,
   },
   { 
     title: 'Microneedling Package (4x 90 min treatments)', 
     price: '$1,000', 
-    description: '4 times regular (once per month) micro-needling package.', 
+    description: '4 times regular (once per month) micro-needling package. The customized facial paste of natural herbal ingredients is used for microneedling sessions to promote the facial rejuvenation treatment effect. Each session includes accompanied body acupuncture treatment based on your fundamental body condition to enhance the facial rejuvenation treatment effect.', 
     isPkg: true,
   },
   { 
     title: 'Trial Package', 
-    price: '$2,400', 
-    services_included: ['8 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $340 value).', '2 Microneedling Treatments ($270 value per session).', '120 min for the initial session plus 90 min for follow-up sessions.'],
+    price: '$2,000', 
+    services_included: ['8 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $300 value)',
+                        'Additional facial Gua Sha/ Cupping.',
+                        '2 Microneedling Treatments ($275 value per session).',
+                        'The customized facial paste of natural herbal ingredients is used for microneedling sessions to promote the facial rejuvenation treatment effect.',
+                        'Each session includes accompanied body acupuncture treatment based on your fundamental body condition to enhance the facial rejuvenation treatment effect.'
+                       ],
     isPkg: true,
   },
   { 
     title: '4-month Makeover Package', 
-    price: '$2,800', 
-    services_included: ['12 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $340 value).', '4 Microneedling Treatments.', '120 min for the initial session plus 90 min for follow-up sessions.'],
+    price: '$3,100', 
+    services_included: ['12 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $300 value).',
+                        'Additional facial Gua Sha/ Cupping',
+                        '4 Microneedling Treatments ($275 value per session)',
+                        'The customized facial paste of natural herbal ingredients is used for microneedling sessions to promote the facial rejuvenation treatment effect.',
+                        'Each session includes accompanied body acupuncture treatment based on your fundamental body condition to enhance the facial rejuvenation treatment effect.'
+                       ],
     isPkg: true,
   },
   { 
     title: 'Ultimate Package', 
-    price: '$4,000', 
-    services_included: ['16 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $340 value).', '6 Microneedling Treatments.', '120 min for the initial session plus 90 min for follow-up sessions.'],
+    price: '$4,200', 
+    services_included: ['16 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $300 value)',
+                        'Additional facial Gua Sha/ Cupping',
+                        '6 Microneedling Treatments ($275 value per session)',
+                        'The customized facial paste of natural herbal ingredients is used for microneedling sessions to promote the facial rejuvenation treatment effect.',
+                        'Each session includes accompanied body acupuncture treatment based on your fundamental body condition to enhance the facial rejuvenation treatment effect.'
+                       ],
     isPkg: true,
   }
 ];
@@ -86,21 +106,35 @@ const facial_services = [
 const special_services = [
   { 
       title: 'Acne Treatment Package', 
-      price: '$2,200', 
+      price: '$2,500', 
       description: 'Acne Treatment Package', 
-      services_included: ['12 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $340 value).', '4 Microneedling Treatments', '120 min for the initial session plus 90 min for follow-up sessions.'],
+      services_included: ['12 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $300 value)',
+                          '4 Microneedling Treatments ($275 value per session).',
+                          'The customized facial paste of natural herbal ingredients is used for microneedling sessions to promote the acne treatment effect.',
+                          'Each session includes accompanied body acupuncture treatment based on your fundamental body condition to enhance the acne treatment effect.',
+                        ],
   },
   { 
       title: 'Hair Regrowth Package', 
-      price: '$4,600', 
+      price: '$5,400', 
       description: 'Hair Regrowth Package', 
-      services_included: ['24 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $340 value).', '8 Scalp Microneedling Treatments.', '6 Free scalp laser treatment.', '120 min for the initial session plus 90 min for follow-up sessions.'],
+      services_included: ['24 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $300 value)',
+                          '8 Microneedling Treatments ($275 value per session).',
+                          'The customized scalp paste of natural herbal ingredients is used for microneedling sessions to promote the hair regrowth treatment effect.',
+                          'Each session includes accompanied body acupuncture treatment based on your fundamental body condition to enhance the hair regrowth treatment effect.',
+                          'Free scalp laser treatments.'
+                         ],
   },
   { 
       title: 'Face Lift & Wrinkle Package', 
-      price: '$2,800', 
+      price: '$3,500', 
       description: 'Face Lift & Wrinkle Package', 
-      services_included: ['12 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $340 value).', '4 Microneedling Treatments.', '120 min for the initial session plus 90 min for follow-up sessions.'],
+      services_included: ['12 Cosmetic Acupuncture Treatments (Including initial 120 min assessment & treatment session - $300 value)',
+                          'Additional facial Gua Sha/ Cupping.',
+                          '6 Microneedling Treatments ($275 value per session).',
+                          'The customized facial paste of natural herbal ingredients is used for microneedling sessions to promote the facial rejuvenation treatment effect.',
+                          'Each session includes accompanied body acupuncture treatment based on your fundamental body condition to enhance the facial rejuvenation treatment effect.'
+                         ],
   }
 ];
 
