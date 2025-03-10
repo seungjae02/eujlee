@@ -22,7 +22,7 @@ const general_services = [
     {  
         title: 'Initial Assessment and Treatment (120 mins)', 
         price: '$250', 
-        description: 'Includes everything in "Initial Assessment", followed by an acupuncture treatment and/or other modality treatment which is best suitable for your health condition.', 
+        description: 'A comprehensive evaluation of your body’s condition, lifestyle, and health goals. Physical exams. Health coaching for self-care to improve the treatment’s effects and change your lifestyle. First acupuncture treatment and/or other modality treatment which is best suitable for your health condition.', 
     },
     { 
         title: 'Follow Up', 
