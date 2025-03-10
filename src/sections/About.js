@@ -35,13 +35,14 @@ const About = () => {
             />
 
             <Typography variant="aboutText" color="text.primary" paragraph>
-                Welcome to We Nature Balance. We are your pathway to a better and more active way of life.
-            </Typography>
-
-            <Typography variant="aboutText" color="text.primary" paragraph>
-                Our mission at We Nature Balance is to help people in our community move, live, and age healthily by offering clinical expertise. 
-                We provide a service of excellence and results-oriented care. Whatever your health journey may be, our goal is to ensure that every 
-                life is a better one.
+                Welcome to We Nature Balance. We are your pathway to a better and more 
+                active way of life. We Nature Balance provides acupuncture treatment 
+                services. We treat all kinds of health conditions, including but not 
+                limited to: <b>insomnia, anxiety, depression, menstrual problems, menopausal 
+                symptoms, headaches, body and joint pains, skin issues, hair loss, weight 
+                control, digestive issues</b>, and more! We are also happy to serve you with <b>facial 
+                rejuvenation acupuncture</b> treatment, a natural way to improve your 
+                aging based on the approach to your root causes.
             </Typography>
         </Box>
 
@@ -67,12 +68,9 @@ const About = () => {
             />
 
             <Typography variant="aboutText" color="text.primary" paragraph>
-                Modern people live very busy lives and suffer from various types of pain due to poor diet, bad posture, and lack of exercise. 
-                This pain causes a lot of stress and leads to a lower quality of life.
-            </Typography>
-
-            <Typography variant="aboutText" color="text.primary" paragraph>
-                We focus on your health based on your needs: recovery from illness, restoring yin-yang balance, and strengthening your body for disease prevention.
+                Our mission at We Nature Balance is to help people in our community move, live, and age healthily by offering clinical expertise. 
+                We provide a service of excellence and results-oriented care. Whatever your health journey may be, our goal is to ensure that every 
+                life is a better one.
             </Typography>
         </Box>
 
@@ -104,20 +102,34 @@ const About = () => {
             />
 
             <Typography variant="aboutText" color="text.primary" paragraph>
-                I am Eun Jung (Grace) Lee, a <strong>registered acupuncturist</strong> with a focus on pain management. Previously, I worked as a <strong>Medical Doctor for 17 years</strong> in Seoul, South Korea. 
-                I help people make changes to their lifestyles and manage their pain using acupuncture, cupping, and Tuina massage therapy. 
-                As a result, they no longer need to rely on painkillers to sleep or function.
+                I am Eun Jung Lee. I’m a registered acupuncturist in <strong>Canada and the USA</strong> with 
+                a focus on pain management. Formerly, I worked as a medical doctor 
+                for 17 years in Seoul, South Korea. I also studied naturopathic medicine, 
+                in addition to traditional Chinese medicine, in Canada. I can provide 
+                beneficial health coaching for you additionally. I help people make 
+                changes to their lifestyle and manage their pain using acupuncture, 
+                cupping, and Tuina massage therapy. As a result, they no longer need to 
+                rely on painkillers to sleep or function.
+            </Typography>
+
+
+            <Typography variant="aboutText" color="text.primary" paragraph>
+                At We Nature Balance, first, we get to know your body’s condition, your 
+                lifestyle, and your health goals. Then, we will provide you with customized 
+                acupuncture treatment. In addition, we will work together to create a 
+                healthcare plan that allows you to do self-care to improve and maintain the 
+                treatment’s effects. Research strongly supports that proactive healthcare 
+                is the most effective; we can help shift your mindset in a way that results 
+                in a more meaningful life and a better quality of living.
             </Typography>
 
             <Typography variant="aboutText" color="text.primary" paragraph>
-                Interested? At We Nature Balance, we first get to know your body's condition, your lifestyle, and your health goals. Then, we will provide you with customized acupuncture treatment. 
-                In addition, we will work together to create a healthcare plan that enables you to engage in self-care to improve the treatment's effects and change your lifestyle. 
-                Research strongly supports that proactive healthcare is more effective, provides a better quality of life, and costs less. We can help you shift your mindset in a way that results in 
-                better health, less pain, and a more meaningful life.
+                We focus on your health depending on your needs: recovery from illness, restoring 
+                yin-yang balance, and strengthening your body for disease prevention.
             </Typography>
 
             <Typography variant="aboutText" color="text.primary" paragraph>
-                Please do not hesitate to contact us at <strong>(437) 455-4343</strong> or email at <strong>gracelee.wenature@gmail.com</strong> with any questions you may have. 
+                Please <a href="#contact">Contact Us</a> at <strong>(437) 455-4343</strong> or email at <strong>gracelee.wenature@gmail.com</strong> with any questions you may have. 
                 Our door is always open.
             </Typography>
         </Box>
