@@ -122,7 +122,6 @@ const special_services = [
                           '8 Microneedling Treatments ($275 value per session).',
                           'The customized scalp paste of natural herbal ingredients is used for microneedling sessions to promote the hair regrowth treatment effect.',
                           'Each session includes accompanied body acupuncture treatment based on your fundamental body condition to enhance the hair regrowth treatment effect.',
-                          'Free scalp laser treatments.'
                          ],
   },
   { 
