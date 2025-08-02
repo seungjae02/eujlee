@@ -11,22 +11,22 @@ import FacialFollowUp from "../assets/images/FacialFollowUp.webp";
 const general_services = [
     { 
         title: 'Initial Assessment (60 mins)', 
-        price: '$150', 
+        price: '$135', 
         description: 'A comprehensive evaluation of your body’s condition, lifestyle, and health goals. Includes physical examination, disease diagnosis, and health coaching for self-care (changing your lifestyle, recommendations for further assessment, and treatment procedures).', 
     },
     { 
         title: 'Online Health Consultation & Coaching (30 mins)', 
-        price: '$75 (+$30/addtional 15 mins)', 
+        price: '$60 (+$30/addtional 15 mins)', 
         description: 'A comprehensive evaluation of your body’s condition, lifestyle, and health goals. Includes disease diagnosis, and health coaching for self-care (changing your lifestyle, recommendations for further assessment, and treatment procedures). Online meeting at your convenient place. Ideal for a person who has a tight schedule', 
     },
     {  
         title: 'Initial Assessment and Treatment (120 mins)', 
-        price: '$250', 
+        price: '$240', 
         description: 'A comprehensive evaluation of your body’s condition, lifestyle, and health goals. Physical exams. Health coaching for self-care to improve the treatment’s effects and change your lifestyle. First acupuncture treatment and/or other modality treatment which is best suitable for your health condition.', 
     },
     { 
         title: 'Follow Up', 
-        price: '$150/60 min', 
+        price: '$120/60 min', 
         description: 'Regular follow-up assessment and treatment for ongoing care.', 
     },
 ];
@@ -145,13 +145,13 @@ const Services = () => {
           Our Services
         </Typography>
         {/* Treatments & Followups */}
-        <Accordion className="service-accordion">
+        {/* <Accordion className="service-accordion"> */}
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Box display="flex" alignItems="center">
               <Box className="service-image-container">
                   <img src={AssessmentAndTreatment} alt="Treatment" className="service-image" />
                 </Box>
-              <Typography variant="h3" className="service-title">General Assessments & Treatments</Typography>
+              <Typography variant="h3" className="service-title">Assessments & Treatments</Typography>
             </Box>
           </AccordionSummary>
           <AccordionDetails>
@@ -171,10 +171,10 @@ const Services = () => {
               </Paper>
             ))}
           </AccordionDetails>
-        </Accordion>
+        {/* </Accordion> */}
 
         {/* Facial Services Dropdown with Image */}
-        <Accordion className="service-accordion">
+        {/* <Accordion className="service-accordion">
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Box display="flex" alignItems="center">
                 <Box className="service-image-container">
@@ -232,10 +232,10 @@ const Services = () => {
               </Paper>
             ) : "")}
           </AccordionDetails>
-        </Accordion>
+        </Accordion> */}
 
         {/* Specials */}
-        <Accordion className="service-accordion">
+        {/* <Accordion className="service-accordion">
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Box display="flex" alignItems="center">
               <Box className="service-image-container">
@@ -267,7 +267,7 @@ const Services = () => {
               </Paper>
             ))}
           </AccordionDetails>
-        </Accordion>
+        </Accordion> */}
       </Container>
     </Box>
   );

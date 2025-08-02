@@ -14,7 +14,7 @@ const About = () => {
                 About "We Nature Balance"
             </Typography>
 
-            <Box
+            {/* <Box
                 component="img"
                 src={office1}
                 alt="About Us"
@@ -32,7 +32,7 @@ const About = () => {
                         ml: 0,
                     },
                 }}
-            />
+            /> */}
 
             <Typography variant="aboutText" color="text.primary" paragraph>
                 Welcome to We Nature Balance. We are your pathway to a better and more 
@@ -107,8 +107,8 @@ const About = () => {
                 for 17 years in Seoul, South Korea. I also studied naturopathic medicine, 
                 in addition to traditional Chinese medicine, in Canada. I can provide 
                 beneficial health coaching for you additionally. I help people make 
-                changes to their lifestyle and manage their pain using acupuncture, 
-                cupping, and Tuina massage therapy. As a result, they no longer need to 
+                changes to their lifestyle and manage their pain using <strong>acupuncture, 
+                cupping, MOXA bustion, and Tuina massage therapy</strong>. As a result, they no longer need to 
                 rely on painkillers to sleep or function.
             </Typography>
 
@@ -129,7 +129,7 @@ const About = () => {
             </Typography>
 
             <Typography variant="aboutText" color="text.primary" paragraph>
-                Please <a href="#contact">Contact Us</a> at <strong>(437) 455-4343</strong> or email at <strong>gracelee.wenature@gmail.com</strong> with any questions you may have. 
+                Please <a href="#contact">Contact Us</a> at <strong>(647) 823-1656</strong> or email at <strong>gracelee.wenature@gmail.com</strong> with any questions you may have. 
                 Our door is always open.
             </Typography>
         </Box>
