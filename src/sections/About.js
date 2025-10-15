@@ -1,7 +1,5 @@
 // src/sections/About.js
-import React from 'react';
-import { Box, Typography, Container, Grid } from '@mui/material';
-import office1 from "../assets/images/office1.jpg";
+import { Box, Typography, Container } from '@mui/material';
 import office2 from "../assets/images/office2.jpg";
 import portrait from "../assets/images/portrait.jpg";
 
@@ -38,10 +36,13 @@ const About = () => {
                 Welcome to We Nature Balance. We are your pathway to a better and more 
                 active way of life. We Nature Balance provides acupuncture treatment 
                 services. We treat all kinds of health conditions, including but not 
-                limited to: <b>insomnia, anxiety, depression, menstrual problems, menopausal 
-                symptoms, headaches, body and joint pains, skin issues, hair loss, weight 
-                control, digestive issues</b>, and more! We are also happy to serve you with <b>facial 
-                rejuvenation acupuncture</b> treatment, a natural way to improve your 
+                limited to: <b>insomnia, anxiety, depression, menstrual problems, infertility, menopausal 
+                symptoms, headaches, body and joint pains, skin issues, hair loss, digestive issues</b>, and more!
+            </Typography>
+
+            <Typography variant="aboutText" color="text.primary">
+                We can also serve you with <b>facial 
+                rejuvenation acupuncture</b> with <b>light therapy</b>, a natural way to improve your 
                 aging based on the approach to your root causes.
             </Typography>
         </Box>
@@ -72,6 +73,7 @@ const About = () => {
                 We provide a service of excellence and results-oriented care. Whatever your health journey may be, our goal is to ensure that every 
                 life is a better one.
             </Typography>
+            
         </Box>
 
         <Box sx={{ maxWidth: '1200px', mx: 'auto', p: 3, display: 'flow-root' }}>
@@ -108,7 +110,7 @@ const About = () => {
                 in addition to traditional Chinese medicine, in Canada. I can provide 
                 beneficial health coaching for you additionally. I help people make 
                 changes to their lifestyle and manage their pain using <strong>acupuncture, 
-                cupping, MOXA bustion, and Tuina massage therapy</strong>. As a result, they no longer need to 
+                cupping, MOXA bustion, Tuina massage, and light therapy</strong>. As a result, they no longer need to 
                 rely on painkillers to sleep or function.
             </Typography>
 

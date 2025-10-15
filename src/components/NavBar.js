@@ -69,6 +69,9 @@ function NavBar() {
             <Button className="nav-button" onClick={() => handleScrollToSection("contact")}>
               CONTACT
             </Button>
+            <Button className="nav-button" onClick={() => handleScrollToSection("resources")}>
+              RESOURCES
+            </Button>
             <Button variant="outlined" className="book-now" onClick={() => handleScrollToSection("contact")}>
               BOOK NOW
             </Button>
@@ -113,6 +116,9 @@ function NavBar() {
           </ListItem>
           <ListItem button onClick={() => handleScrollToSection("contact")}>
             <ListItemText primary="CONTACT" />
+          </ListItem>
+          <ListItem button onClick={() => handleScrollToSection("resources")}>
+            <ListItemText primary="RESOURCES" />
           </ListItem>
           <ListItem button onClick={() => handleScrollToSection("book")}>
             <Button variant="outlined" className="book-now">

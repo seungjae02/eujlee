@@ -17,7 +17,7 @@ const Contact = () => {
               <iframe
                 title="Google Map"
                 className="map-iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.0240829217136!2d-79.39252002405726!3d43.70854709353643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b332f89472caf%3A0xbcc7ed7e36f05f5!2s234%20Eglinton%20Ave%20E%2C%20Toronto%2C%20ON%20M4P%201K5!5e0!3m2!1sen!2sca!4v1754104596457!5m2!1sen!2sca"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.136734572135!2d-79.39896147639159!3d43.70770741451864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3324d675a963%3A0xab8032e3615e210!2s120%20Eglinton%20East%20Business%20Centre%20Inc!5e0!3m2!1sen!2sus!4v1760551534301!5m2!1sen!2sus"
                 allowFullScreen
                 loading="lazy"
               />
@@ -38,7 +38,7 @@ const Contact = () => {
                 📍 Address:
               </Typography>
               <Typography variant="body2" color="textPrimary" paragraph>
-                234 Eglinton Ave E Unit #201, Toronto, ON, M4P 1K7 (inside Advanced Spine Center)
+                120 Eglinton Ave E Unit #1001, Toronto, ON, M4P 1E2
               </Typography>
 
               <Typography variant="subtitle1" color="primary" fontWeight="bold">

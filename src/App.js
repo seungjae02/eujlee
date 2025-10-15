@@ -5,6 +5,7 @@ import Landing from './sections/Landing';
 import About from './sections/About';
 import Services from './sections/Services';
 import Contact from './sections/Contact';
+import Resources from './sections/Resources'
 import './App.css';
 import { createTheme } from '@mui/material/styles';
 
@@ -47,6 +48,7 @@ function App() {
       <section id="home"><Landing /></section>
       <section id="about"><About /></section>
       <section id="services"><Services /></section>
+      <section id='resources'><Resources/></section>
       <section id="contact"><Contact /></section>
     </ThemeProvider>
   );
