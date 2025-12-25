@@ -18,7 +18,16 @@ const Resources = () => {
           </AccordionSummary>
           <AccordionDetails>
             <div className="flex justify-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NBovkxuoBeA?si=Y2uO5h1stpxBzZdw" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/NBovkxuoBeA?rel=0&modestbranding=1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
             </div>
           </AccordionDetails>
         </Accordion>
