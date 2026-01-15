@@ -63,9 +63,9 @@ function NavBar() {
             <Button className="nav-button" onClick={() => handleScrollToSection("about")}>
               ABOUT
             </Button>
-            <Button className="nav-button" onClick={() => handleScrollToSection("services")}>
+            {/* <Button className="nav-button" onClick={() => handleScrollToSection("services")}>
               SERVICES
-            </Button>
+            </Button> */}
             <Button className="nav-button" onClick={() => handleScrollToSection("contact")}>
               CONTACT
             </Button>
