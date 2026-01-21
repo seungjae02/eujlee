@@ -3,7 +3,7 @@ import { ThemeProvider } from '@mui/material';
 import NavBar from './components/NavBar';
 import Landing from './sections/Landing';
 import About from './sections/About';
-import Services from './sections/Services';
+// import Services from './sections/Services';
 import Contact from './sections/Contact';
 import Resources from './sections/Resources'
 import './App.css';
