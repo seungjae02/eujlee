@@ -35,9 +35,9 @@ const About = () => {
             <Typography variant="aboutText" color="text.primary" paragraph>
                 Welcome to We Nature Balance. We are your pathway to a better and more 
                 active way of life. We Nature Balance provides acupuncture treatment 
-                services. I treat a variety of health conditions: musculoskeletal issues, hair loss, 
+                services. We treat a variety of health conditions: <b>musculoskeletal issues, 
                 pain, insomnia, headache, menstrual problems, support IVF (in vitro fertilization), 
-                menopausal symptom, support cancer patients, digestive issues, depression, anxiety, etc.
+                menopausal symptoms, support cancer patients, digestive issues, depression, anxiety, hair loss, etc.</b>
             </Typography>
 
             <Typography variant="aboutText" color="text.primary">

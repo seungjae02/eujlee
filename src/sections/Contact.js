@@ -14,7 +14,13 @@ const Contact = () => {
           {/* Google Map (Left Side) */}
           <Grid item xs={12} md={6} className="map-container">
             <Box className="map-box">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5768.2754721954!2d-79.3949167!3d43.707686599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b33457bb6e113%3A0x2d823ddb92d13ca3!2sWe%20Nature%20Balance!5e0!3m2!1sen!2sus!4v1770699473140!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"/>
+              <iframe
+                title="Google Map"
+                className="map-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.1377360977!2d-79.3949167!3d43.707686599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b33457bb6e113%3A0x2d823ddb92d13ca3!2sWe%20Nature%20Balance!5e0!3m2!1sen!2sus!4v1770699924051!5m2!1sen!2sus"
+                allowFullScreen
+                loading="lazy"
+              />
             </Box>
           </Grid>
 
