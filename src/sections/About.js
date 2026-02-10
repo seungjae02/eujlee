@@ -84,7 +84,7 @@ const About = () => {
             <Box
                 component="img"
                 src={portrait}
-                alt="Dr. Eun Jung (Grace) Lee"
+                alt="Dr. Grace Lee"
                 sx={{
                     float: 'right',
                     width: '25%',
@@ -104,13 +104,13 @@ const About = () => {
             />
 
             <Typography variant="aboutText" color="text.primary" paragraph>
-                I am Eun Jung Lee. I’m a registered acupuncturist in <strong>Canada</strong> and the <strong>USA</strong> with 
+                I am Grace Lee. I’m a registered acupuncturist in <strong>Canada</strong> and the <strong>USA</strong> with 
                 a focus on pain management. Formerly, I worked as a medical doctor 
                 for 17 years in Seoul, South Korea. I also studied naturopathic medicine, 
                 in addition to traditional Chinese medicine, in Canada. I can provide 
                 beneficial health coaching for you additionally. I help people make 
                 changes to their lifestyle and manage their pain using <strong>acupuncture, 
-                cupping, MOXA bustion, Tuina massage, light therapy, etc</strong>. As a result, they no longer need to 
+                cupping, MOXA bustion, Tuina massage, etc</strong>. As a result, they no longer need to 
                 rely on painkillers to sleep or function.
             </Typography>
 
