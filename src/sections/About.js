@@ -35,14 +35,14 @@ const About = () => {
             <Typography variant="aboutText" color="text.primary" paragraph>
                 Welcome to We Nature Balance. We are your pathway to a better and more 
                 active way of life. We Nature Balance provides acupuncture treatment 
-                services. We treat all kinds of health conditions, including but not 
-                limited to: <b>insomnia, anxiety, depression, menstrual problems, infertility, menopausal 
-                symptoms, headaches, body and joint pains, skin issues, hair loss, digestive issues</b>, and more!
+                services. I treat a variety of health conditions: musculoskeletal issues, hair loss, 
+                pain, insomnia, headache, menstrual problems, support IVF (in vitro fertilization), 
+                menopausal symptom, support cancer patients, digestive issues, depression, anxiety, etc.
             </Typography>
 
             <Typography variant="aboutText" color="text.primary">
                 We can also serve you with <b>facial 
-                rejuvenation acupuncture</b> with <b>light therapy</b>, a natural way to improve your 
+                rejuvenation acupuncture</b>, a natural way to improve your 
                 aging based on the approach to your root causes.
             </Typography>
         </Box>
