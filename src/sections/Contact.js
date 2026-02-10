@@ -14,13 +14,7 @@ const Contact = () => {
           {/* Google Map (Left Side) */}
           <Grid item xs={12} md={6} className="map-container">
             <Box className="map-box">
-              <iframe
-                title="Google Map"
-                className="map-iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.136734572135!2d-79.39896147639159!3d43.70770741451864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3324d675a963%3A0xab8032e3615e210!2s120%20Eglinton%20East%20Business%20Centre%20Inc!5e0!3m2!1sen!2sus!4v1760551534301!5m2!1sen!2sus"
-                allowFullScreen
-                loading="lazy"
-              />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5768.2754721954!2d-79.3949167!3d43.707686599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b33457bb6e113%3A0x2d823ddb92d13ca3!2sWe%20Nature%20Balance!5e0!3m2!1sen!2sus!4v1770699473140!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"/>
             </Box>
           </Grid>
 

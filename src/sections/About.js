@@ -110,7 +110,7 @@ const About = () => {
                 in addition to traditional Chinese medicine, in Canada. I can provide 
                 beneficial health coaching for you additionally. I help people make 
                 changes to their lifestyle and manage their pain using <strong>acupuncture, 
-                cupping, MOXA bustion, Tuina massage, and light therapy</strong>. As a result, they no longer need to 
+                cupping, MOXA bustion, Tuina massage, light therapy, etc</strong>. As a result, they no longer need to 
                 rely on painkillers to sleep or function.
             </Typography>
 
