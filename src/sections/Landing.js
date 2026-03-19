@@ -103,7 +103,7 @@ function Landing() {
             startIcon={<EventAvailableIcon />}
             onClick={() => handleScrollToSection("contact")}
             sx={{
-              backgroundColor: "#00796b", // Matches your teal theme
+              backgroundColor: "#82A192", // Matches your teal theme
               color: "white",
               padding: "14px 40px",
               fontSize: "1.1rem",
