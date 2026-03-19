@@ -1,38 +1,40 @@
-.contact-container {
-    padding: 40px 0;
-    background-color: #f9f9f9;
-    margin-bottom: 100px;
-  }
-  
-  .map-container {
-    display: flex;
-  }
-  
-  .map-box {
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    flex-grow: 1;
-  }
-  
-  .map-iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 8px;
-    min-height: 350px;
-  }
-  
-  .contact-details {
-    display: flex;
-  }
-  
-  .contact-paper {
-    padding: 32px;
-    border-radius: 8px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
+/* src/sections/Resources.css */
+
+.resources-section {
+  padding: 80px 0;
+  background-color: #f4f7f6; /* Matches the Services section background */
+}
+
+/* Modern Card Styling */
+.resource-card {
+  border-radius: 16px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #ffffff !important;
+}
+
+.resource-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Perfect 16:9 Responsive Iframe Wrapper */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+  background-color: #000; /* Dark background before video loads */
+}
+
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

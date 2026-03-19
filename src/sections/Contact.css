@@ -1,38 +1,48 @@
-.contact-container {
-    padding: 40px 0;
-    background-color: #f9f9f9;
-    margin-bottom: 100px;
-  }
-  
-  .map-container {
-    display: flex;
-  }
-  
-  .map-box {
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    flex-grow: 1;
-  }
-  
-  .map-iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 8px;
-    min-height: 350px;
-  }
-  
-  .contact-details {
-    display: flex;
-  }
-  
-  .contact-paper {
-    padding: 32px;
-    border-radius: 8px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
+/* src/sections/Contact.css */
+
+.contact-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+/* Contact Card Styling */
+.contact-card {
+  padding: 48px !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06) !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9fafb !important;
+}
+
+/* Map Styling */
+.map-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 400px; /* Ensures the map doesn't collapse on mobile */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  border: none;
+}
+
+/* Clickable Links */
+.contact-link {
+  color: #34495e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: #00796b;
+  text-decoration: underline;
+}

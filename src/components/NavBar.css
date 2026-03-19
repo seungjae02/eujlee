@@ -1,130 +1,137 @@
-/* Prevent Horizontal Scrolling on the Whole Page */
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
+/* src/sections/NavBar.css */
 
-/* Align Navbar items properly */
-.navbar-toolbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 100vw;
-    box-sizing: border-box;
-}
-
-/* Default navbar with a lighter background */
+/* --- Main Navbar Styles --- */
 .navbar {
-    background: rgba(180, 200, 190, 0.2); /* Adjusted transparency */
-    transition: background-color 0.3s ease-in-out;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid transparent;
-    position: sticky; /* Ensures it sticks to the top */
-    top: 0; /* Required for sticky behavior */
-    z-index: 1000; /* Ensures it stays above other elements */
-    width: 100%;
-    max-width: 100vw; /* Prevents overflow */
-    padding: 10px 20px;
+  background-color: transparent !important; /* Overrides MUI default */
+  box-shadow: none !important;
+  transition: all 0.3s ease-in-out !important;
+  padding: 12px 0;
 }
 
-/* Navbar appearance when scrolled */
+/* Styles applied when the user scrolls down */
 .navbar.scrolled {
-    background: rgba(160, 190, 175, 0.2); /* Slightly darker for better readability */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  padding: 4px 0;
 }
 
-/* Navbar Buttons */
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-left: auto;
+.navbar-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-button {
-    color: white !important;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: color 0.2s, transform 0.2s;
+/* --- Logo & Branding --- */
+.logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-.nav-button:hover {
-    color: rgba(255, 255, 255, 0.8) !important;
-    transform: scale(1.05);
+.logo-img {
+  height: 65px;
+  transition: height 0.3s ease;
+  margin-right: 16px;
 }
 
-/* Book Now Button */
-.book-now {
-    border-color: white !important;
-    color: white !important;
-    transition: background-color 0.2s, transform 0.2s;
+.navbar.scrolled .logo-img {
+  height: 50px;
 }
 
-.book-now:hover {
-    background-color: rgba(255, 255, 255, 0.2) !important;
-    transform: scale(1.05);
+.brand-name {
+  font-weight: 800 !important;
+  color: #2c3e50 !important;
+  letter-spacing: 0.1em !important;
 }
 
-/* Hamburger Menu Button (Now on Right) */
-.menu-button {
-    display: none;
-    margin-left: auto;
+/* --- Desktop Navigation --- */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-/* Mobile Drawer */
-.mobile-menu {
-    width: 250px;
-    background: rgba(130, 161, 146, 0.95);
-    height: 100%;
-    padding-top: 20px;
+.nav-link {
+  color: #34495e !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+  transition: color 0.3s ease !important;
+  margin: 0 8px !important;
 }
 
-.mobile-menu .MuiListItemText-primary {
-    font-size: 1.2rem;
-    color: white;
-    text-align: center;
+.navbar.scrolled .nav-link {
+  color: #2c3e50 !important;
 }
 
-.mobile-menu .MuiButton-root {
-    width: 100%;
-    margin-top: 10px;
-    text-align: center;
+.nav-link:hover {
+  color: #00796b !important;
+  background-color: transparent !important;
 }
 
-/* Responsive Fix for Mobile */
-@media (max-width: 900px) {
-    .nav-links {
-        display: none;
-    }
-
-    .menu-button {
-        display: block !important;
-    }
-
-    .navbar {
-        padding: 10px;
-        max-width: 100vw;
-    }
-
-    .mobile-menu {
-        width: 100vw;
-        max-width: 100%;
-    }
+/* --- Buttons --- */
+.btn-book-now {
+  background-color: #82A192 !important;
+  color: white !important;
+  font-weight: bold !important;
+  border-radius: 24px !important;
+  padding: 8px 32px !important;
+  box-shadow: 0 4px 14px rgba(0, 121, 107, 0.3) !important;
+  margin-left: 16px !important;
+  transition: all 0.3s ease !important;
 }
 
-/* Responsive Fix for Mobile */
-@media (max-width: 500px) {
-    .nav-title {
-        display: none;
-    }
+.btn-book-now:hover {
+  background-color: #004d40 !important;
+  box-shadow: 0 6px 20px rgba(0, 121, 107, 0.4) !important;
 }
 
-.logo {
-    height: 20px;
+/* --- Mobile Drawer Styles --- */
+.drawer-paper {
+  width: 75vw;
+  max-width: 320px;
+  background-color: #f9fafb !important;
+  box-shadow: -5px 0 25px rgba(0,0,0,0.1) !important;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.mobile-nav-item {
+  border-radius: 8px !important;
+  margin-bottom: 8px !important;
+  transition: background-color 0.2s !important;
+}
+
+.mobile-nav-item:hover {
+  background-color: rgba(0, 121, 107, 0.08) !important;
+}
+
+.mobile-nav-text span {
+  font-weight: 600 !important;
+  color: #34495e !important;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+/* --- Responsive Media Queries --- */
+@media (max-width: 899px) {
+  .desktop-nav {
+    display: none !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .mobile-menu-btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 599px) {
+  .brand-name {
+    display: none !important;
+  }
 }

@@ -1,18 +1,18 @@
 import React from 'react';
-import { ThemeProvider } from '@mui/material';
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import { createTheme } from '@mui/material/styles';
 import NavBar from './components/NavBar';
 import Landing from './sections/Landing';
 import About from './sections/About';
-// import Services from './sections/Services';
+import Services from './sections/Services';
+import Resources from './sections/Resources';
 import Contact from './sections/Contact';
-import Resources from './sections/Resources'
 import './App.css';
-import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#82A192',
+      main: '#82A192', // Love this sage green color!
       contrastText: '#ffffff',
     },
     secondary: {
@@ -35,21 +35,26 @@ const theme = createTheme({
     body1: {
       fontSize: '1.1rem',
     },
-    aboutText: {
-      fontSize: '1.2rem',
-    },
   },
 });
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      {/* CssBaseline smooths out browser inconsistencies and applies base theme styles */}
+      <CssBaseline /> 
+      
       <NavBar />
-      <section id="home"><Landing /></section>
-      <section id="about"><About /></section>
-      {/* <section id="services"><Services /></section> */}
-      <section id='resources'><Resources/></section>
-      <section id="contact"><Contact /></section>
+      
+      {/* Semantic HTML wrapper for your main content */}
+      <main> 
+        <section id="home"><Landing /></section>
+        <section id="about"><About /></section>
+        <section id="services"><Services /></section>
+        <section id="resources"><Resources /></section>
+        <section id="contact"><Contact /></section>
+      </main>
+      
     </ThemeProvider>
   );
 }
