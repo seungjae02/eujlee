@@ -2,7 +2,7 @@
 import { Box, Typography, Container, Grid, Divider } from '@mui/material';
 import { motion } from 'framer-motion';
 import './About.css'; 
-import office2 from "../assets/images/office2.jpg";
+import office3 from "../assets/images/office3.webp";
 import portrait from "../assets/images/portrait.jpg";
 
 const About = () => {
@@ -52,7 +52,7 @@ const About = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <motion.div {...slideRight} className="about-image-container">
-              <img src={office2} alt="We Nature Balance Clinic" className="about-image" />
+              <img src={office3} alt="We Nature Balance Clinic" className="about-image" />
             </motion.div>
           </Grid>
         </Grid>
