@@ -11,30 +11,38 @@ export const servicesData = [
       {
         title: "Online Health Consultation & Coaching",
         description: [
-          "A comprehensive evaluation of your body's condition, lifestyle, and health goals.",
+          "A focused comprehensive evaluation of your body's condition, lifestyle, and health goals.",
           "Disease diagnosis and health coaching for self-care, change your lifestyle, and recommendations for further assessment and treatment procedures."
         ],
         duration: "30 min",
-        price: "$75 (+$30 per each additional 15 min)"
+        price: "$75"
       },
       {
-        title: "Initial Assessment and Treatment (90 min)",
+        title: "Online/In-Person Health Consultation & Coaching",
+        description: [
+          "A comprehensive evaluation of your body’s condition, lifestyle, and health goals.",
+          "Disease diagnosis and health coaching for self-care, change your lifestyle, and recommendations for further assessment and treatment procedures."
+        ],
+        duration: "60 min",
+        price: "$150"
+      },
+      {
+        title: "Initial Assessment and Treatment (75 min)",
         description: [
           "A comprehensive evaluation of your body's condition, lifestyle, and health goals.",
           "Physical exams.",
-          "Health coaching for self-care to improve the treatment's effects and change your lifestyle.",
-          "1st acupuncture treatment and/or other modality treatment, which is best suited for your health condition.",
-          "Spectral Light therapy with Infrared Crystal therapy."
+          "Disease diagnosis.",
+          "1st acupuncture treatment and/or other modality treatment, which is best suited for your health condition."
         ],
-        duration: "90 min",
-        price: "$180"
+        duration: "75 min",
+        price: "$160"
       },
       {
         title: "Initial Assessment and Treatment (120 min)",
         description: [
           "A comprehensive evaluation of your body's condition, lifestyle, and health goals.",
           "Physical exams.",
-          "Health coaching for self-care to improve the treatment’s effects and change your lifestyle.",
+          "Disease diagnosis and health coaching for self-care to improve the treatment’s effects and change your lifestyle",
           "1st acupuncture treatment and/or other modality treatment, which is best suited for your health condition.",
           "Spectral Light therapy with Infrared Crystal therapy."
         ],
@@ -42,20 +50,21 @@ export const servicesData = [
         price: "$250"
       },
       {
-        title: "Initial Assessment and Treatment (75 min)",
+        title: "Initial Assessment and Treatment (90 min)",
         description: [
           "A comprehensive evaluation of your body's condition, lifestyle, and health goals.",
           "Physical exams.",
-          "Disease diagnosis and health coaching for self-care, and changing your lifestyle.",
-          "1st acupuncture treatment and/or other modality treatment, which is best suited for your health condition."
+          "Disease diagnosis and Health coaching for self-care to improve the treatment’s effects.",
+          "1st acupuncture treatment and/or other modality treatment, which is best suited for your health condition.",
+          "Spectral Light therapy with Infrared Crystal therapy."
         ],
-        duration: "75 min",
-        price: "$160"
+        duration: "90 min",
+        price: "$180"
       },
       {
         title: "Follow-Up Assessment and Treatment (45 min)",
         description: [
-          "Regular follow-up assessment and treatment for ongoing care."
+          "Compact follow-up assessment and treatment for ongoing care."
         ],
         duration: "45 min",
         price: "$100"
@@ -72,7 +81,7 @@ export const servicesData = [
       {
         title: "Follow-Up Assessment and Treatment (90 min)",
         description: [
-          "Regular follow-up assessment and treatment for ongoing care.",
+          "A comprehensive follow-up assessment and treatment for ongoing care.",
           "Spectral Light therapy with Infrared Crystal therapy."
         ],
         duration: "90 min",
@@ -93,7 +102,7 @@ export const servicesData = [
         title: "Cosmetic Acupuncture Initial",
         description: [
           "First facial rejuvenation acupuncture session.",
-          "Including personalized health assessment and body acupuncture treatment, which is customized based on your fundamental body condition, to enhance the facial rejuvenation treatment effect.",
+          "Includes personalized health assessment and body acupuncture treatment, which is customized based on your fundamental body condition, to enhance the facial rejuvenation treatment effect.",
           "Additional facial Gua Sha/Cupping.",
           "Spectral Light therapy with Infrared Crystal therapy."
         ],
@@ -104,7 +113,7 @@ export const servicesData = [
         title: "Cosmetic Acupuncture Follow-Up",
         description: [
           "Regular follow-up assessment and facial acupuncture treatment for ongoing care.",
-          "Additional facial Gua Sha/ Cupping.",
+          "Additional facial Gua Sha/Cupping.",
           "Each session includes an accompanied body acupuncture treatment tailored to your fundamental body condition to enhance the facial rejuvenation treatment.",
           "Spectral Light therapy with Infrared Crystal therapy."
         ],
