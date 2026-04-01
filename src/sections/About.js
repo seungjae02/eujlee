@@ -42,11 +42,14 @@ const About = () => {
               <Typography variant="body1" color="text.secondary" paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
                 Welcome to We Nature Balance, your pathway to a healthier, more active lifestyle. We provide specialized acupuncture treatments tailored to address a wide variety of health conditions.
               </Typography>
-              <Typography variant="body1" color="text.secondary" paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
-                Our focus areas include: <strong>musculoskeletal issues, chronic pain, insomnia, headaches, menstrual irregularities, IVF support, menopausal symptoms, oncology support, digestive issues, depression, anxiety, and hair loss.</strong>
+              <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>
+                Our treatment modalities include <strong>Acupuncture, Cupping, Gua Sha, Moxibustion, Tuina massage, Education, and Health Coaching</strong> - to help individuals with a variety of health issues include, but not limited to: pain management, musculoskeletal problems, fertility issues, gynecology/hormonal conditions (PCOS, Dysmenorrhea, Endometriosis, PMS), pregnancy support care, depression/anxiety, insomnia, digestion problems, skin issues, cancer patient support, etc. 
               </Typography>
               <Typography variant="body1" color="text.secondary" sx={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
                 We also offer <strong>facial rejuvenation acupuncture</strong>—a natural, root-cause approach to graceful aging and skin vitality.
+              </Typography>
+              <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>
+                <strong>Our Approach:</strong> We start by deeply understanding your body’s condition, lifestyle, and goals. Together, we create a proactive healthcare plan emphasizing self-care to maintain your treatment's effects. Whether you need recovery from illness, restoration of yin-yang balance, or disease prevention, we are here to shift your mindset toward a better quality of living.
               </Typography>
             </motion.div>
           </Grid>
@@ -88,14 +91,6 @@ const About = () => {
 
               <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>
                 Grace studied Traditional Chinese Medicine (TCM) and Acupuncture as an extension of her background in Western medicine. She has grown up in Seoul, South Korea, where oriental medicine is one of the main pillars of medicine. By studying TCM, her understanding of the human body and health broadened from a different point of view. Grace also completed the Naturopathic Medicine program at the Canadian College of Naturopathic Medicine in Toronto. By studying medicine from multiple perspectives, Grace understands a person as a whole. She takes the root causes of diseases as well as mental-emotional connections to imbalances seriously and practices an individualized approach in her patient care and provides holistic health coaching and customized treatments. Grace upholds the principle that an inherent harmony exists between the human body and the natural world, a foundational tenet of Traditional Chinese Medicine. Grace emphasizes the importance of cultivating a well‑balanced lifestyle and prioritizing personal health as a means to restore focus on living a more fulfilling, purposeful, and enriching life. She helps patients manage pain naturally, reducing their reliance on painkillers to sleep and function.
-              </Typography>
-
-              <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>
-                Grace’s treatment modalities include <strong>Acupuncture, Cupping, Gua Sha, Moxibustion, Tuina massage, Education, and Health Coaching</strong> - to help individuals with a variety of health issues include, but not limited to: pain management, musculoskeletal problems, fertility issues, gynecology/ hormonal conditions (PCOS, Dysmenorrhea, Endometriosis, PMS), pregnancy support care, depression/anxiety, insomnia, digestion problems, skin issues, cancer patient support, etc. 
-              </Typography>
-
-              <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>
-                <strong>Our Approach:</strong> We start by deeply understanding your body’s condition, lifestyle, and goals. Together, we create a proactive healthcare plan emphasizing self-care to maintain your treatment's effects. Whether you need recovery from illness, restoration of yin-yang balance, or disease prevention, we are here to shift your mindset toward a better quality of living.
               </Typography>
 
               <Box sx={{ mt: 4, p: 3, backgroundColor: '#f0f7fa', borderRadius: '8px' }}>
