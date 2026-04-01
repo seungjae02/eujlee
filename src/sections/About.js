@@ -79,7 +79,7 @@ const About = () => {
                 Meet the Expert
               </Typography>
               <Typography variant="h5" color="text.primary" gutterBottom sx={{ mb: 3 }}>
-                Dr. Grace Lee, Registered Acupuncturist
+                Grace Lee, Registered Acupuncturist
               </Typography>
               
               <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>
