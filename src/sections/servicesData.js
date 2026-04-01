@@ -27,15 +27,16 @@ export const servicesData = [
         price: "$150"
       },
       {
-        title: "Initial Assessment and Treatment (75 min)",
+        title: "Initial Assessment and Treatment (90 min)",
         description: [
           "A comprehensive evaluation of your body's condition, lifestyle, and health goals.",
           "Physical exams.",
-          "Disease diagnosis.",
-          "1st acupuncture treatment and/or other modality treatment, which is best suited for your health condition."
+          "Disease diagnosis and Health coaching for self-care to improve the treatment’s effects.",
+          "1st acupuncture treatment and/or other modality treatment, which is best suited for your health condition.",
+          "Spectral Light therapy with Infrared Crystal therapy."
         ],
-        duration: "75 min",
-        price: "$160"
+        duration: "90 min",
+        price: "$180"
       },
       {
         title: "Initial Assessment and Treatment (120 min)",
@@ -50,16 +51,15 @@ export const servicesData = [
         price: "$250"
       },
       {
-        title: "Initial Assessment and Treatment (90 min)",
+        title: "Initial Assessment and Treatment (75 min)",
         description: [
           "A comprehensive evaluation of your body's condition, lifestyle, and health goals.",
           "Physical exams.",
-          "Disease diagnosis and Health coaching for self-care to improve the treatment’s effects.",
-          "1st acupuncture treatment and/or other modality treatment, which is best suited for your health condition.",
-          "Spectral Light therapy with Infrared Crystal therapy."
+          "Disease diagnosis.",
+          "1st acupuncture treatment and/or other modality treatment, which is best suited for your health condition."
         ],
-        duration: "90 min",
-        price: "$180"
+        duration: "75 min",
+        price: "$160"
       },
       {
         title: "Follow-Up Assessment and Treatment (60 min)",
