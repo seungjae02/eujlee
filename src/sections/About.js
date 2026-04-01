@@ -79,15 +79,19 @@ const About = () => {
                 Meet the Expert
               </Typography>
               <Typography variant="h5" color="text.primary" gutterBottom sx={{ mb: 3 }}>
-                Grace Lee, Registered Acupuncturist
+                Grace Lee - Registered Acupuncturist, Medical Doctor (S. Korea)
               </Typography>
               
               <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>
-                I am a Registered Acupuncturist in <strong>Canada</strong> and the <strong>USA</strong>, specializing in pain management. Prior to my practice here, I served as a medical doctor for 17 years in Seoul, South Korea. Drawing from my extensive background in traditional Chinese medicine and naturopathic principles, I provide holistic health coaching and customized treatments.
+                Grace is a Registered Acupuncturist in Canada and the USA. Prior to her practice at We Nature Balance, Grace served as a medical doctor for 17 years in Seoul, South Korea and 2 and a half years in Canada. In addition to clinical experience, Grace has multiple medical research experiences at university hospitals in South Korea and Canada, which include breast cancer, uterine endometrial cancer, and functional brain MRI with acupuncture.
               </Typography>
 
               <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>
-                Using modalities like <strong>acupuncture, cupping, moxibustion, and Tui Na massage</strong>, I help patients manage pain naturally, reducing their reliance on painkillers to sleep and function.
+                Grace studied Traditional Chinese Medicine (TCM) and Acupuncture as an extension of her background in Western medicine. She has grown up in Seoul, South Korea, where oriental medicine is one of the main pillars of medicine. By studying TCM, her understanding of the human body and health broadened from a different point of view. Grace also completed the Naturopathic Medicine program at the Canadian College of Naturopathic Medicine in Toronto. By studying medicine from multiple perspectives, Grace understands a person as a whole. She takes the root causes of diseases as well as mental-emotional connections to imbalances seriously and practices an individualized approach in her patient care and provides holistic health coaching and customized treatments. Grace upholds the principle that an inherent harmony exists between the human body and the natural world, a foundational tenet of Traditional Chinese Medicine. Grace emphasizes the importance of cultivating a well‑balanced lifestyle and prioritizing personal health as a means to restore focus on living a more fulfilling, purposeful, and enriching life. She helps patients manage pain naturally, reducing their reliance on painkillers to sleep and function.
+              </Typography>
+
+              <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>
+                Grace’s treatment modalities include <strong>Acupuncture, Cupping, Gua Sha, Moxibustion, Tuina massage, Education, and Health Coaching</strong> - to help individuals with a variety of health issues include, but not limited to: pain management, musculoskeletal problems, fertility issues, gynecology/ hormonal conditions (PCOS, Dysmenorrhea, Endometriosis, PMS), pregnancy support care, depression/anxiety, insomnia, digestion problems, skin issues, cancer patient support, etc. 
               </Typography>
 
               <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>

@@ -62,14 +62,6 @@ export const servicesData = [
         price: "$180"
       },
       {
-        title: "Follow-Up Assessment and Treatment (45 min)",
-        description: [
-          "Compact follow-up assessment and treatment for ongoing care."
-        ],
-        duration: "45 min",
-        price: "$100"
-      },
-      {
         title: "Follow-Up Assessment and Treatment (60 min)",
         description: [
           "Regular follow-up assessment and treatment for ongoing care.",
@@ -86,7 +78,15 @@ export const servicesData = [
         ],
         duration: "90 min",
         price: "$150"
-      }
+      },
+      {
+        title: "Follow-Up Assessment and Treatment (45 min)",
+        description: [
+          "Compact follow-up assessment and treatment for ongoing care."
+        ],
+        duration: "45 min",
+        price: "$100"
+      },
     ]
   },
   {
