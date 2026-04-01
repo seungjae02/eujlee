@@ -55,7 +55,7 @@ const About = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <motion.div {...slideRight} className="about-image-container">
-              <img src={office3} alt="We Nature Balance Clinic" className="about-image" />
+              <img src={office3} alt="We Nature Balance Clinic" className="about-image" style={{ width: '100%', borderRadius: '8px' }} />
             </motion.div>
           </Grid>
         </Grid>
@@ -75,47 +75,60 @@ const About = () => {
         <Divider sx={{ mb: 10 }} />
 
         {/* Section 3: Meet the Expert */}
-        <Grid container spacing={6} alignItems="center" direction={{ xs: 'column-reverse', md: 'row' }}>
-          <Grid item xs={12} md={7}>
-            <motion.div {...slideLeft}>
-              <Typography variant="h3" color="primary" gutterBottom sx={{ fontWeight: 'bold' }}>
-                Meet the Expert
-              </Typography>
-              <Typography variant="h5" color="text.primary" gutterBottom sx={{ mb: 3 }}>
-                Grace Lee - Registered Acupuncturist, Medical Doctor (S. Korea)
-              </Typography>
-              
-              <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>
-                Grace is a Registered Acupuncturist in Canada and the USA. Prior to her practice at We Nature Balance, Grace served as a medical doctor for 17 years in Seoul, South Korea and 2 and a half years in Canada. In addition to clinical experience, Grace has multiple medical research experiences at university hospitals in South Korea and Canada, which include breast cancer, uterine endometrial cancer, and functional brain MRI with acupuncture.
-              </Typography>
-
-              <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>
-                Grace studied Traditional Chinese Medicine (TCM) and Acupuncture as an extension of her background in Western medicine. She has grown up in Seoul, South Korea, where oriental medicine is one of the main pillars of medicine. By studying TCM, her understanding of the human body and health broadened from a different point of view. Grace also completed the Naturopathic Medicine program at the Canadian College of Naturopathic Medicine in Toronto. By studying medicine from multiple perspectives, Grace understands a person as a whole. She takes the root causes of diseases as well as mental-emotional connections to imbalances seriously and practices an individualized approach in her patient care and provides holistic health coaching and customized treatments. Grace upholds the principle that an inherent harmony exists between the human body and the natural world, a foundational tenet of Traditional Chinese Medicine. Grace emphasizes the importance of cultivating a well‑balanced lifestyle and prioritizing personal health as a means to restore focus on living a more fulfilling, purposeful, and enriching life. She helps patients manage pain naturally, reducing their reliance on painkillers to sleep and function.
-              </Typography>
-
-              <Box sx={{ mt: 4, p: 3, backgroundColor: '#f0f7fa', borderRadius: '8px' }}>
-                <Typography variant="body1" color="text.primary" sx={{ fontWeight: 500 }}>
-                  Have questions? Our door is always open.
-                </Typography>
-                <Typography variant="body1" color="text.secondary" sx={{ mt: 1 }}>
-                  Call us at <strong>(647) 823-1656</strong> or email <a href="mailto:gracelee.wenature@gmail.com" className="contact-link">gracelee.wenature@gmail.com</a>.
-                </Typography>
-              </Box>
-            </motion.div>
-          </Grid>
-          
-          <Grid item xs={12} md={5}>
-            <motion.div 
+        <Box sx={{ display: 'block', mb: 10 }}>
+          <motion.div {...slideLeft}>
+            <Typography variant="h3" color="primary" gutterBottom sx={{ fontWeight: 'bold' }}>
+              Meet the Expert
+            </Typography>
+            <Typography variant="h5" color="text.primary" gutterBottom sx={{ mb: 3 }}>
+              Grace Lee - Registered Acupuncturist, Medical Doctor (S. Korea)
+            </Typography>
+            
+            {/* Floated Circular Image Block */}
+            <Box
+              component={motion.div}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-              className="about-image-container"
+              sx={{
+                float: { xs: 'none', md: 'right' },
+                width: { xs: '250px', md: '350px' },
+                height: { xs: '250px', md: '350px' },
+                mx: { xs: 'auto', md: 0 },
+                ml: { md: 5 },
+                mb: { xs: 4, md: 2 },
+                borderRadius: '50%',
+                shapeOutside: 'circle(50%)',
+                overflow: 'hidden',
+                display: { xs: 'block', md: 'block' }
+              }}
             >
-              <img src={portrait} alt="Portrait of Dr. Grace Lee" className="portrait-image" />
-            </motion.div>
-          </Grid>
-        </Grid>
+              <img 
+                src={portrait} 
+                alt="Portrait of Dr. Grace Lee" 
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+              />
+            </Box>
+
+            <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>
+              Grace is a Registered Acupuncturist in Canada and the USA. Prior to her practice at We Nature Balance, Grace served as a medical doctor for 17 years in Seoul, South Korea and two and a half years in Canada. In addition to clinical experience, Grace has multiple medical research experiences at university hospitals in South Korea and Canada, which include breast cancer, uterine endometrial cancer, and functional brain MRI with acupuncture.
+            </Typography>
+
+            <Typography variant="body1" color="text.secondary" paragraph sx={{ lineHeight: 1.8 }}>
+              Grace studied Traditional Chinese Medicine (TCM) and Acupuncture as an extension of her background in Western medicine. She has grown up in Seoul, South Korea, where oriental medicine is one of the main pillars of medicine. By studying TCM, her understanding of the human body and health broadened from a different point of view. Grace also completed the Naturopathic Medicine program at the Canadian College of Naturopathic Medicine in Toronto. By studying medicine from multiple perspectives, Grace understands a person as a whole. She takes the root causes of diseases as well as mental-emotional connections to imbalances seriously and practices an individualized approach in her patient care and provides holistic health coaching and customized treatments. Grace upholds the principle that an inherent harmony exists between the human body and the natural world, a foundational tenet of Traditional Chinese Medicine. Grace emphasizes the importance of cultivating a well‑balanced lifestyle and prioritizing personal health as a means to restore focus on living a more fulfilling, purposeful, and enriching life. She helps patients manage pain naturally, reducing their reliance on painkillers to sleep and function.
+            </Typography>
+
+            <Box sx={{ mt: 4, p: 3, backgroundColor: '#f0f7fa', borderRadius: '8px', clear: 'both' }}>
+              <Typography variant="body1" color="text.primary" sx={{ fontWeight: 500 }}>
+                Have questions? Our door is always open.
+              </Typography>
+              <Typography variant="body1" color="text.secondary" sx={{ mt: 1 }}>
+                Call us at <strong>(647) 823-1656</strong> or email <a href="mailto:gracelee.wenature@gmail.com" style={{ color: 'inherit', textDecoration: 'underline' }}>gracelee.wenature@gmail.com</a>.
+              </Typography>
+            </Box>
+          </motion.div>
+        </Box>
 
       </Container>
     </Box>
